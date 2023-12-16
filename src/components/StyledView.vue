@@ -106,7 +106,7 @@ function handleSystem(type) {
 </script>
 
 <template>
-  <section class="base">
+  <div class="base">
     <!-- LEFT PANEL -->
     <div class="left-panel">
       <!-- SYSTEM -->
@@ -186,7 +186,7 @@ function handleSystem(type) {
         ></StyledBox>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 <style scoped>
 .base {
@@ -203,6 +203,12 @@ function handleSystem(type) {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+.controllers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
 }
 .right-panel {
   display: flex;
