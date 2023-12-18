@@ -251,7 +251,14 @@ function handleSystem(type) {
         >
         <StyledBox label="Display"
           ><template #body>
-            <div style="min-width: 400px">
+            <div
+              style="
+                min-width: 400px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+              "
+            >
               <div>
                 <span>VELOCITY: </span
                 ><span class="info-distance-value"
@@ -280,7 +287,8 @@ function handleSystem(type) {
 .left-panel {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 60px;
 }
 .system {
   display: flex;
@@ -320,7 +328,8 @@ function handleSystem(type) {
 .action-buttons {
   display: flex;
   /* justify-content: space-between; */
-  gap: 20px;
+  gap: 40px;
+  margin-bottom: 10px;
 }
 .directions {
   display: flex;
